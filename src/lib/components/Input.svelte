@@ -1,6 +1,7 @@
 <script>
 	export let label = "Label"
 	export let placeholder
+	export let type = "text"
 </script>
 
 <div class="mb-3">
@@ -8,7 +9,7 @@
 		>{label}</label
 	>
 	<input
-		type="email"
+		type="{type}"
 		class="form-control"
 		id="exampleFormControlInput1"
 		{placeholder}

@@ -1,3 +1,16 @@
+<script>
+	import { page } from '$app/stores';
+
+	let links = [
+		{titulo:'Inventario',href:'/inventario'},
+		{titulo:'Actividades',href:'/actividades'},
+		{titulo:'Computadores',href:'/computadores'},
+		{titulo:'Externos',href:'/externos'},
+		{titulo:'Reportes',href:'/reportes'},
+	]
+</script>
+
+
 <nav class="px-1 navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
 	<div class="container-fluid">
 		<a class="navbar-brand" href="/">UbuBiblioteca</a>
@@ -14,27 +27,11 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 			<ul class="navbar-nav">
-				<li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="/catalogo">Catalogo</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Features</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Pricing</a>
-				</li>
-				<!--
-		<li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-				Dropdown link
-			</a>
-			<ul class="dropdown-menu">
-				<li><a class="dropdown-item" href="#">Action</a></li>
-				<li><a class="dropdown-item" href="#">Another action</a></li>
-				<li><a class="dropdown-item" href="#">Something else here</a></li>
-			</ul>
-		</li>
-		-->
+				{#each links as link }
+					<li class="nav-item">
+						<a class="nav-link {$page.url.pathname.includes(link.href)?'active':''}" aria-current="page" href="{link.href}">{link.titulo}</a>
+					</li>	
+				{/each}
 			</ul>
 		</div>
 	</div>
