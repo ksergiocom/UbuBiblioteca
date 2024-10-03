@@ -45,7 +45,16 @@
 			<td>ID</td>
 			<td>Evento 1</td>
 			<td>1999/01/01</td>
-			<td>Edit - Delete</td>
+			<td>						<a
+				href="/inventario/libro"
+				class="btn btn-sm btn-primary"
+				><i class="bi bi-pen"></i></a
+			>
+			<a
+			href="/inventario/libro"
+			class="btn btn-sm btn-danger"
+			><i class="bi bi-trash"></i></a
+		></td>
 		</tr>
 		{/each}
 	</tbody>

@@ -5,20 +5,20 @@
 </script>
 
 <form action="/inventario">
-	<p>
-		Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, praesentium ut a distinctio sint eligendi.
+	<p class="lead">
+		Aquí agregaríamos cosas para poder hacer consultas con más opciones. Esto se tendría que hacer sobre un recurso concreto para saber que opciones de consulta/filtrado habría.
 	</p>
 	<Input label="Nombre"/>
 	<Input label="ISBN"/>
 	<Select label="Fecha"/>
 	<Select label="Sala"/>
-	<div class="form-check mb-3">
+	<div class="form-check mb-3 mt-4">
 		<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
 		<label class="form-check-label" for="flexRadioDefault1">
 			Opcion 1
 		</label>
 	  </div>
-	  <div class="form-check">
+	  <div class="form-check mb-3">
 		<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
 		<label class="form-check-label" for="flexRadioDefault2">
 		  Opcion 2

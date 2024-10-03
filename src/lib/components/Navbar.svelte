@@ -7,6 +7,7 @@
 		{titulo:'Computadores',href:'/computadores'},
 		{titulo:'Externos',href:'/externos'},
 		{titulo:'Reportes',href:'/reportes'},
+		{titulo:'Socios',href:'/socios'},
 	]
 </script>
 

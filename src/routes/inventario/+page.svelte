@@ -61,6 +61,11 @@
 							class="btn btn-sm btn-primary"
 							><i class="bi bi-pen"></i></a
 						>
+						<a
+						href="/inventario/libro"
+						class="btn btn-sm btn-danger"
+						><i class="bi bi-trash"></i></a
+					>
 					</td>
 				</tr>
 			{/each}
@@ -80,10 +85,15 @@
 					<td>Sala - {num}</td>
 					<td>
 						<a
-							href="/inventario/sala"
+							href="/inventario/libro"
 							class="btn btn-sm btn-primary"
 							><i class="bi bi-pen"></i></a
 						>
+						<a
+						href="/inventario/libro"
+						class="btn btn-sm btn-danger"
+						><i class="bi bi-trash"></i></a
+					>
 					</td>
 				</tr>
 			{/each}
