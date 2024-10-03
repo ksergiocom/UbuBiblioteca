@@ -5,7 +5,10 @@
 
 <h1>Socios</h1>
 
-<Button href="/socios/form">Crear socio</Button>
+<div class="d-flex gap-3">
+	<Button href="/socios/form">Crear socio</Button>
+	<Button href="/socios/form">Nuevo préstamo</Button>
+</div>
 
 <table class="table mt-4">
 	<thead>
